@@ -10,7 +10,8 @@ export default function TodoItem({todo, onCompleted, onDeleteItem}) {
         return (
             <li style={getStyle()}>
             <input type="checkbox" checked={todo.completed}
-            onChange={()=>onCompleted(todo.id)} className="check"/>
+            onChange={()=>onCompleted(todo.id)} className="check" id={todo.id}/>
+                <label for={todo.id}></label>
             {todo.task}
             <button onClick={()=>{onDeleteItem(todo.id)}} className="Xbtn">X</button>
             </li>
