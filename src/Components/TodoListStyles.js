@@ -14,21 +14,23 @@ padding: 25px;
 `
 
 export const InputStyled = styled.input`
-width: 70%;
+width: 80%;
 height: 2rem;
 border: 3px solid #AB0000;
-background: #181818;
+background: #000;
 border-radius: 10px;
 color: red;
 padding-left: 2rem;
+margin-right: 3px;
 ::placeholder{color:red}
 `
 
 export const ButtonStyled = styled.button`
 height: 2rem;
-width: 25%;
+width: 15%;
 border: 3px solid #AB0000;
-background: #181818;
+background: #000;
 border-radius: 10px;
-color: red
+color: red;
+margin-left: 3px;
 `

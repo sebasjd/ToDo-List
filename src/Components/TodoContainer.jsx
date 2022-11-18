@@ -23,10 +23,10 @@ export const TodoContainer =()=>{
     return(
         <>
         <TodoContainerStyled>
-<TodoInput addTodo = {addTodo} />
-           <ul>
-             <TodoList todos = {todos} onCompleted = {onCompleted} onDeleteItem = {onDeleteItem}/>
-           </ul>
+            <TodoInput addTodo = {addTodo} />
+            <ul>
+                <TodoList todos = {todos} onCompleted = {onCompleted} onDeleteItem = {onDeleteItem}/>
+            </ul>
         </TodoContainerStyled>
         </>
     )

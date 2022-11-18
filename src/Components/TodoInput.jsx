@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { ButtonStyled, InputStyled } from './TodoListStyles';
 
 export const TodoInput = ({addTodo}) => {
     const [userInput, setUserInput]= useState(" ");
@@ -14,8 +15,8 @@ export const TodoInput = ({addTodo}) => {
   return (
     <>
     <form onSubmit={handleSubmit}>
-        <input type="text" value={userInput}  onChange={handleOnChange} className="input"/>
-        <button>Add</button>
+        <InputStyled type="text" value={userInput}  onChange={handleOnChange} className="input"/>
+        <ButtonStyled>Add</ButtonStyled>
     </form>
     </>
   )
